@@ -24,8 +24,8 @@ python scrape.py <tags> <count> <date>
 ```
 
 - `tags`: One or more space-separated tags to filter photos.
-- `count`: The number of photos to download.
-- `date`: The minimum upload date for retrieved photos (format: 'YYYY-MM-DD').
+- `count`: The number of photos to download (default=1)
+- `date`: The minimum upload date for retrieved photos (format: 'YYYY-MM-DD', (default='2023-01-01')).
 
 Example:
 
