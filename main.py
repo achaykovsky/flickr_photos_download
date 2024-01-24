@@ -26,9 +26,10 @@ def get_arguments():
     date = args.date
 
     # Access and use the arguments
-    logging.info("tags:", tags)
-    logging.info("count:", count)
-    logging.info("date:", date)
+    print("The arguments received:")
+    print(f"tags: {tags}")
+    print(f"count: {count}")
+    print(f"date: {date}")
     return tags, count, date
 
 
