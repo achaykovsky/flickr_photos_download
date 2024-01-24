@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def get_argumnets():
+def get_arguments():
     # Create argument parser
     parser = argparse.ArgumentParser(description='Downloading photos from Flickr')
 
@@ -94,19 +94,15 @@ def retrieve_photos_by_tag(flickr, tag, date, count, download_dir, per_page=10, 
 
 def create_output_directory():
     current_directory = os.getcwd()
-    path = current_directory + '\\downloads\\' + tags
+    path = current_directory + '\\downloads\\'
     download_dir = os.path.join(current_directory, path)
     os.makedirs(download_dir, exist_ok=True)
     return download_dir
 
 
 if __name__ == "__main__":
-    # Set the tag to search for
-    tags = 'dog'
-    date = '2024-23-01'
-    count = 1
 
-    # tags, count, date = get_argumnets()
+    tags, count, date = get_arguments()
 
     API_KEY = os.environ.get("API_KEY")
     API_SECRET = os.environ.get("API_SECRET")
