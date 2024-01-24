@@ -20,7 +20,7 @@ Before running the script, make sure you have the following:
 Run the script from the command line with the following arguments:
 
 ```bash
-python script_name.py <tags> <count> <date>
+python scrape.py <tags> <count> <date>
 ```
 
 - `tags`: One or more space-separated tags to filter photos.
@@ -30,7 +30,7 @@ python script_name.py <tags> <count> <date>
 Example:
 
 ```bash
-python script_name.py cat 5 2023-01-01
+python scrape.py cat 5 2023-01-01
 ```
 
 ## Output
